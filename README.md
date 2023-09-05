@@ -15,7 +15,5 @@
     </p>
 </div>
 
-<div align="center">
-    <h2>Photos</h2>
-    <br>
-</div>
+https://github.com/hacimertgokhan/Portfolio/assets/64479768/5b5481b3-06a0-4b05-a98e-53aa77b868ca
+
