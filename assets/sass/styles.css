@@ -46,6 +46,7 @@ html {
   justify-content: center;
 }
 .nav ul li {
+  transition: 0.3s;
   margin: 5px 85px 0px 85px;
 }
 .nav ul li a {
@@ -92,12 +93,14 @@ html {
 .welcome .text-box {
   width: 500px;
   height: 350px;
+  transition: 0.3s;
   margin: 0px 120px auto;
   background-color: #fff;
 }
 .welcome .text-box .text {
   display: block;
   font-size: 40px;
+  transition: 0.3s;
   margin: 5px 90px auto;
   font-weight: 800;
 }
@@ -109,12 +112,14 @@ html {
   animation-iteration-count: infinite;
 }
 .welcome .text-box .about-box {
+  transition: 0.3s;
   margin: 50px auto;
   font-size: 20px;
 }
 .welcome .tech-stack {
   width: 400px;
   height: 450px;
+  transition: 0.6s;
   background-color: #fff;
   font-family: "Ysabeau Office";
   margin: -75px 120px auto;
@@ -126,6 +131,7 @@ html {
   height: 450px;
   margin: -17px auto;
   background-color: #202020;
+  transition: 0.3s;
 }
 .welcome .tech-stack ul {
   list-style-type: none;
@@ -312,6 +318,7 @@ html {
   list-style-type: none;
   justify-content: space-evenly;
   display: inline-flex;
+  transition: 0.3s;
   margin: auto;
 }
 .footer ul li a {
@@ -349,6 +356,77 @@ html {
   margin: 0px 5px auto;
 }
 
+@media (max-width: 1300px) {
+  .nav ul li {
+    margin: 5px 25px 0px 25px;
+    transition: 0.3s;
+  }
+  .welcome .tech-stack ul li span p {
+    display: none;
+  }
+  .welcome .tech-stack ul li #kotlin {
+    display: none;
+  }
+  .welcome .tech-stack ul li #mysql {
+    display: none;
+  }
+  .welcome .tech-stack ul li #js {
+    display: none;
+  }
+  .welcome .tech-stack .line {
+    height: 260px;
+    transition: 0.3s;
+  }
+  .nav .cv {
+    width: 190px;
+  }
+  .nav .cv a {
+    font-size: 14px;
+  }
+  .nav .name {
+    transition: 0.3s;
+    font-size: 25px;
+  }
+  .welcome .text-box .text {
+    transition: 0.3s;
+    font-size: 25px;
+    margin: 0px auto;
+  }
+  .welcome .text-box .about-box {
+    transition: 0.3s;
+    font-size: 18px;
+  }
+  .footer ul {
+    transition: 0.3s;
+    width: 800px;
+  }
+  .welcome {
+    margin: 25px auto;
+  }
+}
+@media (max-width: 1100px) {
+  .footer ul {
+    transition: 0.3s;
+    width: 600px;
+  }
+  .welcome .tech-stack {
+    transform: rotateZ(0deg);
+    transition: 0.6s;
+    margin-top: 100px;
+    height: -moz-min-content;
+    height: min-content;
+    width: 400px;
+  }
+  .nav .name {
+    margin: 0px 10px auto;
+  }
+}
+@media (max-width: 900px) {
+  .footer ul {
+    transition: 0.3s;
+    width: 400px;
+  }
+}
 @keyframes java {
   0% {
     width: 0px;
