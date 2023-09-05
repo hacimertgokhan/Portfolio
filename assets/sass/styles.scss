@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Ysabeau+Office');
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black');
+
 :root {
-    --primary: #303030;
-    --secondary: #202020;
+    --primary: #ffff;
+    --secondary: #303030;
+    --other: #202020;
 }
 
 * {
@@ -16,53 +20,375 @@ html {
 .nav {
     width: 100%;
     height: auto;
-    background-color: var(--secondary);
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--primary);
     padding: 20px;
-    span {
-        font-size: 22px;
+    .name {
+        font-size: 30px;
         transition: .3s;
-        color: white;
+        width: min-content;
+        height: min-content;
+        color: var(--secondary);
+        margin: 0px 50px auto;
+        font-family: "Archivo Black";
         cursor: pointer;
-        :hover {
-            transition: .3s;
-            color: #6a77e9;
-        }
+        color: #3665d5;
+        font-weight: 800;
     }
     ul {
         list-style-type: none;
-        display: inline-flex;
-        float: right;
+        font-family: "Ysabeau Office";
+        display: flex;
         margin: auto;
+        font-weight: 600;
+        transform: translate(0%, -120%);
+        justify-content: center;
         li {
-            margin: 5px 75px 0px 75px;
+            margin: 5px 85px 0px 85px;
             a {
                 text-decoration: none;
                 transition: .1s;
                 font-size: 16px;
-                color: white;
+                color: var(--secondary);
             }
             a:hover {
-                transition: .1s;
-                color: #6a77e9;
+                color: #3665d5;
+                transition: .3s;
             }
         }
+    }
+    .cv {
+        width: 200px;
+        transition: .3s;
+        border-radius: 10px;
+        background-color: #3665d5;
+        cursor: pointer;
+        float: right;
+        font-family: "Ysabeau Office";
+        right: 5%;
+        transform: translate(0%, -120%);
+        position: relative;
+        padding: 15px 40px 15px 40px;
+        a {
+            text-decoration: none;
+            text-align: center;
+            color: white;
+            padding: 10px;
+        }
+    }
+    .cv:hover {
+        border-radius: 10px 20px 10px 20px;
+        transition: .3s;
+
     }
 }
 
 .welcome {
 
-    margin: auto;
+    margin: 100px auto 0px 0px;
     justify-content: center;
-    display: grid;
-    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    width: 100%;
+    font-family: "Ysabeau Office";
 
-    h1 {
-        margin: 150px auto 0px 0px;
-        width: 100%;
-        position: sticky;
-        color: white;
+    .text-box {
+        width: 500px;
+        height: 350px;
+        margin: 0px 120px auto;
+        background-color: #fff;
+        .text {
+            display: block;
+            font-size: 40px;
+            margin: 5px 90px auto;
+            font-weight: 800;
+        }
+        .text::after {
+            opacity: 0;
+            content: ' |';
+            animation-name: text;
+            animation-duration: .6s;
+            animation-iteration-count: infinite;
+        }
+        .about-box {
+            margin: 50px auto;
+            font-size: 20px;
+        }
     }
+    
+    .tech-stack {
+        width: 400px;
+        height: 450px;
+        background-color: #fff;
+        font-family: "Ysabeau Office";
+        margin: -75px 120px auto;
+        transform: rotateZ(-90deg);
+        .line {
+            width: 5px;
+            position: absolute;
+            height: 450px;
+            margin: -17px auto;
+            background-color: #202020;
+        }
+        ul {
+            list-style-type: none;
+            li {
+                margin: 0px 50px 40px 0px;
+                background-color: #fff;
+                border-radius: 0px 50px 50px 0px;
+                #html {
+                    background-color: #d79b39;
+                    box-shadow: 0px 0px 30px 1px #d79b39;
+                    height: 25px;
+                    width: 100%;
+                    animation-name: html;
+                    animation-duration: .6s;
+                    display: flex;
+                    border-radius: 0px 50px 50px 0px;
+                    p {
+                        color: white;
+                        margin: 1px -10px;
+                        position: relative;
+                        font-family: "Ysabeau Office";
+                    }
+                    h1 {
+                        font-size: 20px;
+                        color: white;
+                        margin: -3px 20px;
+                        font-weight: 500;
+                        position: relative;
+                    }
+                }
+                #css {
+                    background-color: #1387f3;
+                    height: 25px;
+                    width: 70%;
+                    box-shadow: 0px 0px 30px 1px #1387f3;
+                    animation-name: css;
+                    animation-duration: .6s;
+                    display: flex;
+                    border-radius: 0px 50px 50px 0px;
+                    p {
+                        color: white;
+                        margin: 1px -10px;
+                        position: relative;
+                                                font-family: "Ysabeau Office";
 
+                    }
+                    h1 {
+                        font-size: 20px;
+                        color: white;
+                        margin: -3px 20px;
+                        font-weight: 500;
+                        position: relative;
+                    }
+                }
+                #sass {
+                    background-color: #f313ec;
+                    height: 25px;
+                    width: 70%;
+                    animation-name: css;
+                    box-shadow: 0px 0px 30px 1px #f313ec;
+                    animation-duration: .6s;
+                    display: flex;
+                    border-radius: 0px 50px 50px 0px;
+                    p {
+                        color: white;
+                        margin: 1px -10px;
+                        position: relative;
+                                                font-family: "Ysabeau Office";
+
+                    }
+                    h1 {
+                        font-size: 20px;
+                        color: white;
+                        margin: -3px 20px;
+                        font-weight: 500;
+                        position: relative;
+                    }
+                }
+                #mysql {
+                    background-color: #f39d13;
+                    height: 25px;
+                    width: 50%;
+                    box-shadow: 0px 0px 30px 1px #f39d13;
+                    animation-name: mysql;
+                    animation-duration: .6s;
+                    display: flex;
+                    border-radius: 0px 50px 50px 0px;
+                    p {
+                        color: white;
+                        margin: 1px -10px;
+                        position: relative;
+                                                font-family: "Ysabeau Office";
+
+                    }
+                    h1 {
+                        font-size: 15px;
+                        color: white;
+                        margin: 0px 20px;
+                        font-weight: 500;
+                        position: relative;
+                    }
+                }
+                #java {
+                    background-color: #f39d13;
+                    height: 25px;
+                    width: 60%;
+                    box-shadow: 0px 0px 30px 1px #f39d13;
+                    animation-duration: .6s;
+                    animation-name: java;
+                    display: flex;
+                    border-radius: 0px 50px 50px 0px;
+                    p {
+                        color: white;
+                        margin: 1px -10px;
+                        position: relative;
+                                                font-family: "Ysabeau Office";
+
+                    }
+                    h1 {
+                        font-size: 20px;
+                        color: white;
+                        margin: -3px 20px;
+                        font-weight: 500;
+                        position: relative;
+                    }
+                }
+                #kotlin {
+                    background-color: #5a3af9;
+                    height: 25px;
+                    width: 37%;
+
+                    box-shadow: 0px 0px 30px 1px #5a3af9;
+                    animation-name: js;
+                    animation-duration: .6s;
+                    display: flex;
+                    border-radius: 0px 50px 50px 0px;
+                    p {
+                        color: white;
+                        margin: 1px -10px;
+                        position: relative;
+                                                font-family: "Ysabeau Office";
+
+                    }
+                    h1 {
+                        font-size: 15px;
+                        color: white;
+                        margin: 0px 20px;
+                        font-weight: 500;
+                        position: relative;
+                    }
+                }
+                #js {
+                    background-color: #f9b03a;
+                    height: 25px;
+                    width: 37%;
+                    box-shadow: 0px 0px 30px 1px #f9b03a;
+                    animation-name: js;
+                    animation-duration: .6s;
+                    display: flex;
+                    border-radius: 0px 50px 50px 0px;
+                    p {
+                        color: white;
+                        margin: 1px -10px;
+                        position: relative;
+                        font-family: "Ysabeau Office";
+
+                    }
+                    h1 {
+                        font-size: 15px;
+                        color: white;
+                        margin: 0px 20px;
+                        font-weight: 500;
+                        position: relative;
+                    }
+                }
+            }
+        }
+    }
 }
 
+.footer {
+    width: 100%;
+    bottom: 0;
+    display: block;
+    font-family: "Ysabeau Office";
+    position: absolute;
+    height: 100px;
+    ul {
+        width: 1000px;
+        padding: 37px;
+        float: right;
+        list-style-type: none;
+        justify-content: space-evenly;
+        display: inline-flex;
+        margin: auto;
+        li {
+            a {
+                transition: .3s;
+                color: #303030;
+                text-decoration: none;
+            }
+            a:hover {
+                transition: .3s;
+                letter-spacing: 1px;
+            }
+            #github:hover {
+                color: #303030;
+            }
+            #discord:hover {
+                color: #3a5fcc;
+            }
+            #ig:hover {
+                color: #ca3acc;
+            }
+            #tw:hover {
+                color: #729af8;
+            }
+        }
+    }
+    p {
+        color: #303030;
+        float: left;
+        padding: 37px;
+        left: 10%;
+        position: relative;
+        display: inline-flex;
+        a {
+            text-decoration: none;
+            color: #5a3af9;
+            margin: 0px 5px auto;
+        }
+    }
+}
+
+
+@keyframes java {
+    0% {width: 0px;}
+    100% {width: 60%;}
+}
+
+@keyframes html {
+    0% {width: 0px;}
+    100% {width: 100%;}
+}
+
+@keyframes css {
+    0% {width: 0px;}
+    100% {width: 70%;}
+}
+
+@keyframes js {
+    0% {width: 0px;}
+    100% {width: 37%;}
+}
+
+@keyframes mysql {
+    0% {width: 0px;}
+    100% {width: 50%;}
+}
+
+@keyframes text {
+    0% {opacity: 0;}
+    50% {opacity: 1;}
+    100% {opacity: 0.5;}
+}

@@ -15,32 +15,6 @@
     </p>
 </div>
 
-<div align="center"><h2>User Options</h2></div>
-
-````
-
-    let username = `${gh_ico} Hacı Mert Gökhan`;
-    let github_name = "hacimertgokhan"
-
-````
-<div align="center"><h2>Website Options</h2></div>
-
-````
-
-    let primary = "#303030";
-    let secondary = "#303030";
-
-````
-
-<div align="center">
-    <h2>Languages</h2>
-    <br>
-    <img width=64 height=64 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg" />
-    <img width=64 height=64 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
-    <img width=64 height=64 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg"/>
-    <img width=64 height=64 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" />
-</div>
-
 <div align="center">
     <h2>Photos</h2>
     <br>
