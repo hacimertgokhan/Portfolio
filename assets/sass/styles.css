@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Ysabeau+Office");
 @import url("https://fonts.googleapis.com/css?family=Archivo+Black");
+@import url("https://fonts.googleapis.com/css?family=Ysabeau+Office");
+@import url("https://fonts.googleapis.com/css?family=Archivo+Black");
 :root {
   --primary: #ffff;
   --secondary: #303030;
@@ -132,6 +134,7 @@ html {
   height: 450px;
   margin: -17px auto;
   background-color: #202020;
+  border-radius: 50px;
   transition: 0.3s;
 }
 .welcome .tech-stack ul {
@@ -307,6 +310,7 @@ html {
 .footer {
   width: 100%;
   bottom: 0;
+  transition: 0.3s;
   display: block;
   font-family: "Ysabeau Office";
   position: absolute;
@@ -479,25 +483,94 @@ html {
     opacity: 0.5;
   }
 }
+@media (max-height: 660px) {
+  .footer {
+    opacity: 0;
+    transition: 0.3s;
+  }
+}
+@media (max-width: 540px) {
+  .footer p {
+    display: none;
+  }
+  .footer ul {
+    width: 100%;
+    margin: 20px auto;
+  }
+  .welcome .text-box h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 22px;
+    margin: auto -50px;
+  }
+  .welcome .text-box .text {
+    width: 500px;
+    position: relative;
+    justify-content: center;
+    display: inline-flex;
+  }
+  .welcome .text-box .about-box p {
+    width: 200px;
+    margin: auto;
+    position: relative;
+    justify-content: center;
+    display: flex;
+  }
+  .welcome .tech-stack {
+    opacity: 0;
+    transition: 0.3s;
+    display: none;
+  }
+}
+:root {
+  --primary: #ffff;
+  --secondary: #303030;
+  --other: #202020;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+  background-color: var(--primary);
+}
+
 .lead-text {
   font-family: "Ysabeau Office";
-  font-size: 70px;
   text-align: center;
-  margin: 150px 0px 0px 0px;
+  margin: 360px 0px 0px 0px;
+}
+.lead-text h1 {
+  font-size: 70px;
+}
+.lead-text p {
+  font-size: 23px;
+  width: 1000px;
+  margin: auto;
 }
 
 .about-me {
   width: 100%;
   height: auto;
-  margin: 0px 50px auto;
+  transition: 0.3s;
+  margin: 100px 50px auto;
   padding: 100px;
 }
 .about-me .tech-stack-text {
   color: #3665d5;
   visibility: hidden;
 }
+.about-me picture {
+  float: right;
+  margin: -250px 300px auto;
+}
 .about-me #tech_stack_desc {
   margin: -80px auto;
+  visibility: hidden;
 }
 .about-me h1 {
   width: 400px;
@@ -706,30 +779,12 @@ html {
   position: relative;
 }
 
-.career {
-  margin: 50px 250px auto;
-  justify-content: center;
-  display: flex;
-}
-.career ul {
-  list-style-type: none;
-  margin: 0px 100px auto;
-}
-.career ul li {
-  background-color: #ddd;
-}
-.career ul li h1 {
-  font-family: "Ysabeau Office";
-}
-.career ul li p {
-  width: 200px;
-  font-family: "Ysabeau Office";
-}
-
 .about-footer {
   width: 100%;
+  transition: 0.3s;
+  opacity: 1;
   bottom: 0;
-  margin: -1000px auto;
+  margin: auto;
   display: block;
   font-family: "Ysabeau Office";
   position: absolute;
@@ -1100,5 +1155,28 @@ html {
   }
   .about-me .tech-stack {
     display: none;
+  }
+}
+@media (max-width: 1680px) {
+  .about-me picture {
+    visibility: hidden;
+  }
+}
+@media (max-height: 660px) {
+  .about-footer {
+    opacity: 0;
+    transition: 0.3s;
+  }
+  .about-me {
+    transition: 0.3s;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+  }
+  .about-me h1 {
+    width: auto;
+  }
+  .about-me p {
+    width: auto;
   }
 }/*# sourceMappingURL=styles.css.map */

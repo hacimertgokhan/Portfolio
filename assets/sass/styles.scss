@@ -18,8 +18,6 @@ html {
     background-color: var(--primary);
 }
 
-
-
 .nav {
     width: 100%;
     height: auto;
@@ -106,7 +104,7 @@ html {
             font-size: 40px;
         transition: .3s;
         margin: 5px 90px auto;
-            font-weight: 800;
+        font-weight: 800;
         }
         .text::after {
             opacity: 0;
@@ -136,6 +134,7 @@ html {
             height: 450px;
             margin: -17px auto;
             background-color: #202020;
+            border-radius: 50px;
             transition: .3s;
         }
         ul {
@@ -320,6 +319,7 @@ html {
 .footer {
     width: 100%;
     bottom: 0;
+    transition: .3s;
     display: block;
     font-family: "Ysabeau Office";
     position: absolute;
@@ -480,24 +480,108 @@ html {
     100% {opacity: 0.5;}
 }
 
+@media (max-height: 660px) {
+    .footer {
+        opacity: 0;
+        transition: .3s;
+    }
+}
+
+@media (max-width:540px) {
+    .footer {
+        p {
+            display: none;
+        }
+        ul {
+            width: 100%;
+            margin: 20px auto;
+
+        }
+    }
+    .welcome {
+        .text-box {
+            h1 {
+                width: 100%;
+                text-align: center;
+                font-size: 22px;
+                margin: auto -50px;
+            }
+            .text {
+                width: 500px;
+                position: relative;
+                justify-content: center;
+                display: inline-flex;
+            }
+            .about-box {
+                p {
+                    width: 200px;
+                    margin: auto;
+                    position: relative;
+                    justify-content: center;
+                    display: flex;
+                }
+                
+            }
+        }
+        .tech-stack {
+            opacity: 0;
+            transition: .3s;
+            display: none            
+        }
+    }
+}
+
+@import url('https://fonts.googleapis.com/css?family=Ysabeau+Office');
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black');
+
+:root {
+    --primary: #ffff;
+    --secondary: #303030;
+    --other: #202020;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+    background-color: var(--primary);
+}
+
 .lead-text {
     font-family: "Ysabeau Office";
-    font-size: 70px;
     text-align: center;
-    margin: 150px 0px 0px 0px;
+    margin: 360px 0px 0px 0px;
+    h1 {
+        font-size: 70px;
+    }
+    p {
+        font-size: 23px;
+        width: 1000px;
+        margin: auto;
+    }
 }
 
 .about-me {
     width: 100%;
     height: auto;
-    margin: 0px 50px auto;
+    transition: .3s;
+    margin: 100px 50px auto;
     padding: 100px;
     .tech-stack-text {
         color: #3665d5;
         visibility: hidden;
     }
+    picture {
+        float: right;
+        margin: -250px 300px auto;
+    }
     #tech_stack_desc {
-        margin: -80px auto;       
+        margin: -80px auto;   
+        visibility: hidden;    
     }
     h1 {
         width: 400px;
@@ -715,31 +799,12 @@ html {
     }
 }
 
-.career {
-    margin: 50px 250px auto;
-    justify-content: center;
-    display: flex;
-    ul {
-        list-style-type: none;
-        margin: 0px 100px auto;
-        li {
-            background-color: #ddd;
-            h1 {
-                font-family: "Ysabeau Office";
-            }
-            p {
-                width: 200px;
-                font-family: "Ysabeau Office";
-            }
-        }
-    }
-
-}
-
 .about-footer {
     width: 100%;
+    transition: .3s;
+    opacity: 1;
     bottom: 0;
-    margin: -1000px auto;
+    margin: auto;
     display: block;
     font-family: "Ysabeau Office";
     position: absolute;
@@ -1138,5 +1203,32 @@ html {
     }
     .about-me .tech-stack {
         display: none;
+    }
+}
+
+@media (max-width:1680px) {
+    .about-me {
+        picture {
+            visibility: hidden;
+        }
+    }
+}
+
+@media (max-height: 660px) {
+    .about-footer {
+        opacity: 0;
+        transition: .3s;
+    }
+    .about-me {
+        transition: .3s;
+        margin: auto;
+        text-align: center;
+        width: 100%;
+        h1 {
+            width: auto;
+        }
+        p {
+            width: auto;
+        }
     }
 }
