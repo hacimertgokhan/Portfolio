@@ -3,7 +3,9 @@
 
 <div align="center">
     <h1>Portfolio</h1>
-    <p>Example portfolio website for begginers.</p>
+    <p>A sample portfolio page for beginner web developers can also be used as a simultaneous portfolio website, feel free to use.
+It's just a Home and About me page.
+Most of them are optimized for mobile and hub platforms and have a responsive structure.</p>
     <p align="center">
     <img alt="Github top language" src="https://img.shields.io/github/languages/top/hacimertgokhan/Portfolio?color=56BEB8">
     <img alt="Github language count" src="https://img.shields.io/github/languages/count/hacimertgokhan/Portfolio?color=56BEB8">
